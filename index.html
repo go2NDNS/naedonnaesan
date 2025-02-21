@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내돈내산 - 광고 없는 검색 플랫폼</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>내돈내산 검색</h1>
+        <p>광고성 리뷰 없이, 신뢰할 수 있는 검색 결과를 제공합니다.</p>
+        <input type="text" id="searchQuery" placeholder="검색어를 입력하세요">
+        <button onclick="searchNaver()">검색</button>
+        <div id="results"></div>
+    </div>
+
+    <script>
+        function searchNaver() {
+            var query = document.getElementById("searchQuery").value;
+            if (!query) {
+                alert("검색어를 입력하세요.");
+                return;
+            }
+            
+            // 네이버 API를 활용하여 검색 요청을 보낼 수 있도록 설정 필요
+            alert("검색 기능 구현 예정: " + query);
+        }
+    </script>
+</body>
+</html>
